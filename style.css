@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.button1{
+    padding: 5px 5px;
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    width: 10%;
+    border-radius: 2vh;
+}
+.button2{
+    padding: 5px 5px;
+    background-color: red;
+    border: none;
+    font-size: 20px;
+    width: 10%;
+    border-radius: 2vh;
+}
+.main-button{
+    gap: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+cursor: pointer;
+
+}

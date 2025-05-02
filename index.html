@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="practice.js"></script>
+</head>
+<body>
+    <div class="main-button">
+    <button id="btn1" class="button1">Increase</button>
+    <h4 id="counter">0</h4>
+    <button id="btn2" class="button2">Decrease</button>
+  
+</div>
+
+<script>
+
+
+const button3 = document.getElementById('btn1');
+
+const button4 = document.getElementById('btn2');
+const counterDisplay = document.getElementById('counter');
+let count = 0;
+
+button3.addEventListener('click', function () {
+    count += 5;
+    counterDisplay.textContent = count;
+    
+    if (count ===20) {  
+        document.body.style.background = 'yellow';  // Correct background change
+    } else {
+        document.body.style.background = 'pink';
+    }
+});
+
+button4.addEventListener('click', function () {
+    count -= 3;
+    counterDisplay.textContent = count;
+    if (count => 20) {  
+        document.button4.style.background = 'yellow';  // Correct background change
+    } else {
+        document.button4.style.background = 'black';
+    }
+});
+
+</script>
+</body>
+</html>
